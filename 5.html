@@ -1,16 +1,16 @@
 <html>
 <body>
 <script>
-function factorial(nVal)
+function fact(nValue)
 {
-	if (nVal == 1)
+	if (nValue == 1)
 	{
 		return 1;
 	}
-	return nVal*factorial(nVal-1);
+	return nValue*factorial(nValue-1);
 }
 n = prompt("Введите число", '');
-alert(factorial(n));
+alert(fact(n));
 </script>
 </body>
 </html>
