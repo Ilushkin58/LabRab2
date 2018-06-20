@@ -1,20 +1,18 @@
 <html>
-<body>
-<script>
-function fibbonacci(n) 
-{
-	var nValue1 = 1, nResult = 1;
-	for (var i = 3; i <= n; i++) 
-	{
-		var nValue2 = nValue1 + nResult;
-		nValue1 = nResult;
-		nResult = nValue2;
-	}	
-	return nResult;
-}
+	<body>
+		<script>
+			function fibbonacci(n) {
+				var nValue1 = 1, nResult = 1;
+				for (var i = 3; i <= n; i++) {
+					var nValue2 = nValue1 + nResult;
+					nValue1 = nResult;
+					nResult = nValue2;
+				}	
+				return nResult;
+			}
 
-n = prompt("Введите число", '');
-alert(fibbonacci(n));
-</script>
-</body>
+			n = prompt("Введите число", '');
+			alert(fibbonacci(n));
+		</script>
+	</body>
 </html>

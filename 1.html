@@ -1,18 +1,16 @@
 <html>
-<body>
-<script>
-function seeAge(age)
-{
-return age>18 ? true : confirm('Родители разрешили?');
-}
+	<body>
+		<script>
+			function seeAge(yourAge){
+				return yourAge>18 ? true : confirm('Родители разрешили?');
+			}
 
-function seeAge(age)
-{
-return (age > 18) || confirm('Родители разрешили?');
-}
+			function seeAge(yourAge){
+				return (yourAge > 18) || confirm('Родители разрешили?');
+			}
 
-var age = prompt("Введите age", '');
-seeAge(age);
-</script>
-</body>
+			var yourAge = prompt("Введите Ваш возраст", '');
+			seeAge(yourAge);
+		</script>
+	</body>
 </html>
